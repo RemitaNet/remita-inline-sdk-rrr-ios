@@ -1,40 +1,36 @@
-** **
-
 # Remita Inline Payment SDK for iOS
 
+---
+- [Overview](#Overview)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contributing](#Contributing)
+- [License](License)
+
+---
+
+## Overview
+The following pages outlines the steps to integrating Remita Inline Payment SDK to your app.
 ![](images/inline_snapshot.png)
 
-## Table of Contents
+---
+## Installation
 
-**OVERVIEW**
+**Note:** This setup is done on XCode 10.3, Swift 5.0.1, on Mac OS X(64bit) Mojave
 
-**1.0  IOS FRAMEWORK SETUP**
+1. Right click on your project root file, go to **Add Files to < Project name > . . . ** and click
 
-**2.0  TRY IT NOW**
+2. Browse to the cloned SDK and select **RemitaPaymentGateway.xcodeproj**, check 'Copy items if needed' and 'Create groups' click on add.
 
+3. Select **RemitaPaymentGateway.framework** drag and drop  under "Embedded Binaries" section to add the sdk  to your project.
 
-## OVERVIEW
+4. Rebuild project
 
-The following pages outlines the steps to integrating Remita Inline Payment SDK to your app.
+---
 
-## 1.0         Note: This setup is done on XCode 10.3, Swift 5.0.1, on Mac OS X(64bit) Mojave
-
-**Step 1:** Right click on your project root file, go to **Add Files to < Project name > . . . ** and click
-
-
-**Step 2:** Browse to the cloned SDK and select **RemitaPaymentGateway.xcodeproj**, check 'Copy items if needed' and 'Create groups' click on add.
-
-**Step 3:** Select **RemitaPaymentGateway.framework** drag and drop  under "Embedded Binaries" section to add the sdk  to your project.
-
-**Step 4:** Rebuild project
-
-** **
-
-
-# 2.0         TRY IT NOW
+## Usage
 
 You should invoke paymentGateway: RemitaPaymentGateway = RemitaPaymentGateway() then paymentGateway.initiatePayment() with valid parameters at any point when making payment:
-
 
 **Sample Code:**
 ```swift
@@ -77,7 +73,7 @@ Where url can be:
 **Constants.DEMO.rawValue** (for testing) and **Constants.PRODUCTION.rawValue** (for live).
 
 
-# 3.0         TEST CARDS
+### Test cards
 
 
 ```json
@@ -86,10 +82,27 @@ Where url can be:
               CCV: 000, 
               OTP: 123456
 ```
-
-## Useful links
-* Join our Slack Developer/Support channel at http://bit.ly/RemitaDevSlack
+### Useful links
+Join our Slack Developer/Support channel on [Slack.](http://bit.ly/RemitaDevSlack)
     
-## Support
-- For all other support needs, support@remita.net
-- To contribute to this repo, create an issue on what you intend to fix or update, make a PR and team will look into it and merge.
+### Support
+For all other support needs, support@remita.net
+
+---
+
+## Contributing
+To contribute to this repo, follow these guidelines for creating issues, proposing new features, and submitting pull requests:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b "feature-name"`
+3. Make your changes and commit: `git commit -m "added some new features"`
+4. Push your changes: `git push origin feature-name`
+5. Submit a Pull Request (PR).
+
+Thank you!
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
