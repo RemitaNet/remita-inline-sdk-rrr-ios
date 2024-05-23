@@ -7,7 +7,7 @@
 //
 
 public enum Constants: String {
-    case DEMO = "https://remitademo.net"
+    case DEMO = "https://demo.remita.net"
     case PRODUCTION = "https://login.remita.net"
     
     case SUCCESS_MESSAGE = "SUCCESS"
